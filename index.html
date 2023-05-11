@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Oak Express</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <!-- everthing navtop  -->
+        <div class="navTop">
+            <!--oak express navtop logo -->
+            <div class="nav-top-logo">
+                <div class="logo-box1">
+                    <div class="logo">
+                        <div class="cut-it"></div>
+                        <div class="logo-bg">
+                            <span class="curve">
+                            </span>
+                            <img src="/image/fingerprint.png"
+                                style="background-size: cover; width: 20px; height: 20px; border-radius: 50%; z-index: 3; color: white;"
+                                alt="">
+                        </div>
+                    </div>
+                    <h1 class="text">ak</h1>
+                </div>
+                <p class="logo-text">express</p>
+            </div>
+            <!--oak express navtop logo end here-->
+
+            <!-- search input for navtop only on big screen -->
+            <div class="navItem">
+                <div class="search lg-search">
+                    <input type="text" placeholder="search..." class="searchInput">
+                    <img src="./image/search Icon.png" alt="" width="20" height="20" class="searchIcon">
+                </div>
+            </div>
+            <!-- end of search input -->
+
+            <div class="navItem marq">
+                <marquee behavior="default" direction="Revolutionary" style="font-weight: 900;">
+                    COMPLIMENTARY STANDARD ON ALL SHIPPING
+                </marquee>
+            </div>
+
+
+            <div class="navItem">
+                <span class="limitedOffer">10% Discount</span>
+            </div>
+        </div>
+        <!-- end of navtop -->
+
+
+        <!-- navBottom menu -->
+
+        <div class="navBottom">
+            <!-- <div class="navBottom-section-container"> -->
+            <div class="left-nav-bottom-menu">
+                <div class="left-menu">
+                    <div class="nav-bottom-menu-1">
+                        <h3>International</h3>
+                    </div>
+                    <div class="nav-bottom-menu-2">
+                        <h3> Local</h3>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <h1 style="white-space: nowrap;">HOME</h1>
+                </div>
+            </div>
+
+            <!-- middle nav bottom -->
+            <div class="nav-menu">
+                <a href="#video" class="menuItem">HOME</a>
+                <a href="cost.htm#warehouse" class="menuItem">WAREHOUSE</a>
+                <a href="cost.htm#Inventory-management" class="menuItem">INVENTORY MANAGEMENT</a>
+                <a href="cost.htm#distribution" class="menuItem">DISTRIBUTION</a>
+            </div>
+
+            <!-- this search input has a display of none on default because I want it on medium screen only -->
+            <div class="md-search">
+                <img src="./image/search Icon.png" alt="" width="20" height="20" class="searchIcon">
+                <input type="text" placeholder="search..." class="searchInput">
+            </div>
+
+            <!-- small screen display with display of none by default -->
+            <div class="small-screen-display">
+                <span class="border-left"></span>
+                <img src="./image/search Icon.png" alt="" width="20" height="20" class="searchIcon">
+                <div class="shopping-cart-box">
+                    <img src="./image/shopping_cart.png" class="like-icon" alt="">
+                    <span class="cart-item">0</span>
+                </div>
+
+                <div class="container-md">
+                    <div id="menu-btn" class="button hamburger">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of small screen display -->
+
+            <!-- rigth top bottom menu for shopping cart -->
+            <div class="rigth-menu">
+                <div class="like-box">
+                    <img src="./image/favorite.png" class="like-icon" alt="">
+                </div>
+                <div class="shopping-cart-box">
+                    <img src="./image/shopping_cart.png" class="like-icon" alt="">
+                    <span class="cart-item">0</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div id="ss-nav-menu-id" class="ss-nav-menu">
+        <ul class="ss-menu-s">
+            <a href="#video" class="ss-menuItem">HOME</a>
+            <a href="cost.htm#warehouse" class="ss-menuItem">WAREHOUSE</a>
+            <a href="cost.htm#Inventory-management" class="ss-menuItem">INVENTORY MANAGEMENT</a>
+            <a href="cost.htm#distribution" class="ss-menuItem">DISTRIBUTION</a>
+        </ul>      
+    </div>
+
+    <!-- SLIDER SECTION OF MENU -->
+    <section id="video" class="slider">
+        <video autoplay loop muted plays-inline>
+            <source src="video/delivery.mp4">
+        </video>
+
+        <div class="sliderItem">
+            <h1 class="sliderTitle">Express Delivery for Local and <br> Internation Shipping</h1>
+            <a href="#product">
+                <button class="buyButton" type="button">Request Now</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="track-your-order">
+        <!-- <label for="track-your-order"></label> -->
+        <input type="search" id="track-your-order" name="track-your-order" placeholder="track your order">
+        <button>Search</button>
+    </section>
+
+
+
+
+    <section class="contact-us">
+        <div class="contact-form">
+            <form id="contact" action="" method="post">
+                <h1>let's take care of your logistic </h1>
+
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+
+
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+
+                <fieldset>
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+
+
+            </form>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </div>
+
+        <div class="contact-us-paragrapgh">
+            <h1>contact us</h1>
+            <p>
+                Welcome to Oak Express, your one-stop solution for all your logistic needs. We understand that in
+                today's fast-paced world, businesses need a reliable partner that can take care of their transportation
+                and logistics requirements. That's where Oak Express comes in. We are a leading logistic company with a
+                wealth of experience in providing transportation and logistics services to businesses of all sizes.
+
+                We take pride in offering a comprehensive range of logistics services that are designed to meet the
+                unique needs of our clients. Whether you need help with transportation, warehousing, distribution, or
+                customs clearance, we have the expertise and resources to get the job done right. Our team of
+                experienced professionals is dedicated to ensuring that your goods are delivered on time and in perfect
+                condition, no matter where in the world they need to go
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- feature -->
+
+    <section id="feature" class="features">
+        <div class="feature">
+            <img src="/image/fast and relaible.png" alt="" class="featureIcon">
+            <span class="featureTitle">FAST AND RELIABLE</span>
+            <span class="featureDesc">As a leading logistics company, we pride ourselves on being both fast and
+                reliable. We understand that timely delivery of goods is crucial for our customers' success, and we
+                strive to provide the highest level of service in the industry that...
+            </span>
+            <a href="fast.html">
+                <button type="button" class="read-more">Read More</button>
+            </a>
+        </div>
+        <div class="feature">
+            <img src="/image/experience staff.svg" alt="" class="featureIcon">
+            <span class="featureTitle">Our Experienced Staff </span>
+            <span class="featureDesc">Logistics is a crucial aspect of any business, and it requires experienced and
+                skilled professionals to ensure that everything runs smoothly. At Oak Express, we take great pride in
+                our logistics staff, who bring a wealth of experience and expertise to ...
+            </span>
+            <a href="staff.html">
+                <button type="button" class="read-more">Read More</button>
+            </a>
+        </div>
+        <div class="feature">
+            <img src="/image/flexibilty.png" alt="" class="featureIcon">
+            <span class="featureTitle">FLEXIBILITY</span>
+            <span class="featureDesc">In today's dynamic and unpredictable business environment, flexibility has become
+                a critical factor for the success of logistics companies. The ability to adapt quickly to changing
+                circumstances, customer needs, and market conditions is essential in...
+
+            </span>
+            <a href="flexibility.html">
+                <button type="button" class="read-more">Read More</button>
+            </a>
+        </div>
+        <div class="feature">
+            <img src="/image/cost management.png" alt="" class="featureIcon">
+            <span class="featureTitle">COST MANAGEMENT</span>
+            <span class="featureDesc">cost management is a critical aspect of any business. Every company wants to
+                reduce costs and increase profits, and logistics can be a significant expense. A logistics company that
+                specializes in cost management. In this article, we will discuss the benefits of using ...
+            </span>
+            <a href="cost.htm">
+                <button type="button" class="read-more">Read More</button>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->    <footer>
+        <div class="footerMenu">
+            <h3 class="fTitle">About Us</h3>
+            <div class="fLink">
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+            </div>
+        </div>
+        <div class="footerMenu">
+            <h3 class="fTitle">Contact Us</h3>
+            <div class="fLink">
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+
+            </div>
+        </div>
+
+        <div class="footerMenu">
+            <h3 class="fTitle">Our Services</h3>
+            <div class="fLink">
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+                <li>company</li>
+            </div>
+        </div>
+
+        <div class="fNewsLetter">
+            <h3 class="fNLTitle">Subscribe to our newsletter</h3>
+            <div class="fMail">
+                <input type="email" placeholder="your@email.com" class="fInput">
+                <button class="fButton">Join</button>
+            </div>
+        </div>
+
+        <div class="fSmedia">
+            <h3 class="fSMTitle">Follow Us On</h3>
+            <div class="fIcons">
+                <img src="/Icons/facebook.png" alt="facebook" class="fIcon">
+                <img src="/Icons/twitter (1).png" alt="Twitter" class="fIcon">
+                <img src="/Icons/tiktok.png" alt="TikTok" class="fIcon">
+                <img src="/Icons/whatsapp.png" alt="Whatsapp" class="fIcon">
+            </div>
+
+            <div class="fCopyRigth">
+                <span class="copyright">Alright reseve @Oak 2023</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

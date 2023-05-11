@@ -1,0 +1,114 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .input {
+      width: 300px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .button {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: #fff;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #218838;
+    }
+
+    .result {
+      margin-top: 20px;
+    }
+
+    .order {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .order-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .order-id {
+      font-weight: bold;
+    }
+
+    .order-status {
+      color: #28a745;
+    }
+    
+    .error {
+      color: #dc3545;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Track Your Order</h1>
+    <div class="form">
+      <input type="text" id="tracking-number" class="input" placeholder="Enter your tracking number">
+      <button id="track-button" class="button">Track</button>
+    </div>
+    <div id="result" class="result"></div>
+  </div>
+  
+  <script>
+  
+   // Get the elements from the document
+   const trackingNumberInput = document.getElementById("tracking-number");
+   const trackButton = document.getElementById("track-button");
+   const resultDiv = document.getElementById("result");
+   
+   // Add an event listener to the track button
+   trackButton.addEventListener("click", function() {
+     // Get the value of the tracking number input
+     const trackingNumber = trackingNumberInput.value.trim();
+     
+     // Clear the result div
+     resultDiv.innerHTML = "";
+     
+     // Check if the tracking number is valid
+     if (trackingNumber.length === 10) {
+       // Call
+     } }
