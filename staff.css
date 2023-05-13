@@ -249,12 +249,24 @@ nav a:hover{
     position: relative;
 	width: 100%;
 	height: 50vw;
-	background-image: url(/image/fast\ and\ reliable.jpg);
+	background-image: url(/image/experience-staff.jpeg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
     justify-content: center;
     align-items: center;
+}
+
+.banner-bg{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: .5;
+}
+
+.banner-area h2, .banner-area .container{
+    z-index: 2;
 }
 
 .banner-content{
@@ -265,6 +277,7 @@ nav a:hover{
     margin: 0px 20px;
     /* margin-top: 30px; */
     margin-bottom: 30px;
+    z-index: 2;
 }
 
 @media (max-width: 500px) {
